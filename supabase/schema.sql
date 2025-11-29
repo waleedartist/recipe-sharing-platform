@@ -105,7 +105,7 @@ on public.recipes
 for insert
 with check (auth.uid() = user_id);
 
--- Recipes: Users can update their own recipes
+-- Recipes: Users can update their own recipe
 create policy "Users can update their own recipes"
 on public.recipes
 for update
